@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<style>
+  .comp-title { font: bold 14px sans-serif; fill: #1a1a1a; }
+  .pin-label { font: 10px monospace; fill: #333; }
+  .wire { stroke: #222; stroke-width: 2; fill: none; }
+  .wire-gnd { stroke: #228B22; stroke-width: 2; fill: none; }
+  .wire-pwr { stroke: #DC143C; stroke-width: 2.5; fill: none; }
+  .wire-sig { stroke: #1E90FF; stroke-width: 1.5; fill: none; }
+  .box { fill: #f0f4ff; stroke: #4040a0; stroke-width: 2; rx: 6; }
+  .box-esp { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 2.5; rx: 8; }
+  .box-power { fill: #fff3e0; stroke: #e65100; stroke-width: 2; rx: 6; }
+  .box-relay { fill: #fce4ec; stroke: #c62828; stroke-width: 2; rx: 6; }
+  .pin-dot { fill: #333; }
+  .label { font: 11px sans-serif; fill: #1a1a1a; }
+  .net-label { font: bold 10px monospace; fill: #000; }
+  .title { font: bold 18px sans-serif; fill: #1a1a1a; }
+  .subtitle { font: 13px sans-serif; fill: #444; }
+  .gnd-sym { stroke: #228B22; stroke-width: 2; fill: none; }
+  .pwr-sym { stroke: #DC143C; stroke-width: 2; fill: none; }
+</style>
+<!-- 深远GT1防盗控制器原理图 -->
+
+<text x="600" y="40" class="title" text-anchor="middle">深远GT1 电动车防盗控制器 - 电路原理图 v1.0</text>
+<text x="600" y="65" class="subtitle" text-anchor="middle">ESP32-WROVER-E主控 | 48V电动车电源 | 蓝牙门锁+震动报警+座桶控制</text>
+<rect x="30" y="100" width="120" height="60" class="box-power"/>
+<text x="90" y="135" class="comp-title" text-anchor="middle">XT60 48V输入</text>
+<text x="45" y="155" class="pin-label" text-anchor="middle">+48V</text>
+<text x="135" y="155" class="pin-label" text-anchor="middle">GND</text>
+<rect x="30" y="190" width="120" height="50" class="box-power"/>
+<text x="90" y="220" class="comp-title" text-anchor="middle">30A保险丝</text>
+<rect x="30" y="265" width="120" height="50" class="box-power"/>
+<text x="90" y="295" class="comp-title" text-anchor="middle">SMBJ58A TVS</text>
+<rect x="30" y="350" width="140" height="70" class="box-power"/>
+<text x="100" y="390" class="comp-title" text-anchor="middle">MP2307\A48V→12V 3A</text>
+<text x="40" y="370" class="pin-label" text-anchor="middle">VIN+</text>
+<text x="40" y="400" class="pin-label" text-anchor="middle">VIN-</text>
+<text x="160" y="370" class="pin-label" text-anchor="middle">VOUT+ 12V</text>
+<text x="160" y="400" class="pin-label" text-anchor="middle">VOUT-</text>
+<rect x="30" y="460" width="140" height="70" class="box-power"/>
+<text x="100" y="500" class="comp-title" text-anchor="middle">LM2596\A12V→5V 2A</text>
+<text x="40" y="480" class="pin-label" text-anchor="middle">VIN</text>
+<text x="40" y="510" class="pin-label" text-anchor="middle">GND</text>
+<text x="160" y="480" class="pin-label" text-anchor="middle">VOUT 5V</text>
+<text x="160" y="510" class="pin-label" text-anchor="middle">GND</text>
+<rect x="30" y="570" width="140" height="60" class="box-power"/>
+<text x="100" y="605" class="comp-title" text-anchor="middle">AMS1117-3.3\A5V→3.3V</text>
+<text x="40" y="590" class="pin-label" text-anchor="middle">VIN 5V</text>
+<text x="40" y="615" class="pin-label" text-anchor="middle">GND</text>
+<text x="160" y="605" class="pin-label" text-anchor="middle">VOUT 3.3V</text>
+<rect x="350" y="200" width="200" height="500" class="box-esp"/>
+<text x="450" y="230" class="comp-title" text-anchor="middle">ESP32-WROVER-E</text>
+<text x="450" y="250" class="subtitle" text-anchor="middle">WiFi + BLE + 双核240MHz</text>
+<circle cx="350" cy="270" r="4" fill="#228B22"/>
+<text x="362" y="274" class="pin-label">GND</text>
+<circle cx="350" cy="303" r="4" fill="#DC143C"/>
+<text x="362" y="307" class="pin-label">3V3</text>
+<circle cx="350" cy="336" r="4" fill="#1E90FF"/>
+<text x="362" y="340" class="pin-label">EN</text>
+<circle cx="350" cy="370" r="4" fill="#1E90FF"/>
+<text x="362" y="374" class="pin-label">GPIO0</text>
+<circle cx="350" cy="403" r="4" fill="#1E90FF"/>
+<text x="362" y="407" class="pin-label">TX0</text>
+<circle cx="350" cy="436" r="4" fill="#1E90FF"/>
+<text x="362" y="440" class="pin-label">RX0</text>
+<circle cx="350" cy="470" r="4" fill="#1E90FF"/>
+<text x="362" y="474" class="pin-label">GPIO4</text>
+<circle cx="350" cy="503" r="4" fill="#1E90FF"/>
+<text x="362" y="507" class="pin-label">GPIO5</text>
+<circle cx="350" cy="536" r="4" fill="#1E90FF"/>
+<text x="362" y="540" class="pin-label">GPIO12</text>
+<circle cx="350" cy="570" r="4" fill="#1E90FF"/>
+<text x="362" y="574" class="pin-label">GPIO13</text>
+<circle cx="350" cy="603" r="4" fill="#1E90FF"/>
+<text x="362" y="607" class="pin-label">GPIO14</text>
+<circle cx="350" cy="636" r="4" fill="#1E90FF"/>
+<text x="362" y="640" class="pin-label">GPIO15</text>
+<circle cx="350" cy="670" r="4" fill="#228B22"/>
+<text x="362" y="674" class="pin-label">GND</text>
+<circle cx="550" cy="270" r="4" fill="#1E90FF"/>
+<text x="538" y="274" class="pin-label" text-anchor="end">GPIO25</text>
+<circle cx="550" cy="298" r="4" fill="#1E90FF"/>
+<text x="538" y="302" class="pin-label" text-anchor="end">GPIO26</text>
+<circle cx="550" cy="327" r="4" fill="#1E90FF"/>
+<text x="538" y="331" class="pin-label" text-anchor="end">GPIO27</text>
+<circle cx="550" cy="355" r="4" fill="#1E90FF"/>
+<text x="538" y="359" class="pin-label" text-anchor="end">GPIO32</text>
+<circle cx="550" cy="384" r="4" fill="#1E90FF"/>
+<text x="538" y="388" class="pin-label" text-anchor="end">GPIO33</text>
+<circle cx="550" cy="412" r="4" fill="#1E90FF"/>
+<text x="538" y="416" class="pin-label" text-anchor="end">GPIO34</text>
+<circle cx="550" cy="441" r="4" fill="#1E90FF"/>
+<text x="538" y="445" class="pin-label" text-anchor="end">GPIO35</text>
+<circle cx="550" cy="470" r="4" fill="#1E90FF"/>
+<text x="538" y="474" class="pin-label" text-anchor="end">GPIO36</text>
+<circle cx="550" cy="498" r="4" fill="#1E90FF"/>
+<text x="538" y="502" class="pin-label" text-anchor="end">I2S_BCK</text>
+<circle cx="550" cy="527" r="4" fill="#1E90FF"/>
+<text x="538" y="531" class="pin-label" text-anchor="end">I2S_WS</text>
+<circle cx="550" cy="555" r="4" fill="#1E90FF"/>
+<text x="538" y="559" class="pin-label" text-anchor="end">I2S_DIN</text>
+<circle cx="550" cy="584" r="4" fill="#1E90FF"/>
+<text x="538" y="588" class="pin-label" text-anchor="end">UART_RX2</text>
+<circle cx="550" cy="612" r="4" fill="#1E90FF"/>
+<text x="538" y="616" class="pin-label" text-anchor="end">UART_TX2</text>
+<circle cx="550" cy="641" r="4" fill="#DC143C"/>
+<text x="538" y="645" class="pin-label" text-anchor="end">3V3</text>
+<circle cx="550" cy="670" r="4" fill="#228B22"/>
+<text x="538" y="674" class="pin-label" text-anchor="end">GND</text>
+<rect x="850" y="150" width="140" height="80" class="box-relay"/>
+<text x="920" y="195" class="comp-title" text-anchor="middle">门锁继电器\ASRD-12VDC</text>
+<text x="860" y="170" class="pin-label" text-anchor="middle">COIL+</text>
+<text x="860" y="215" class="pin-label" text-anchor="middle">COIL-</text>
+<text x="980" y="170" class="pin-label" text-anchor="middle">COM</text>
+<text x="980" y="215" class="pin-label" text-anchor="middle">NO</text>
+<rect x="700" y="150" width="120" height="80" class="box"/>
+<text x="760" y="195" class="comp-title" text-anchor="middle">PC817\A光耦隔离</text>
+<text x="710" y="170" class="pin-label" text-anchor="middle">A(GPIO4)</text>
+<text x="710" y="215" class="pin-label" text-anchor="middle">K(GND)</text>
+<text x="810" y="195" class="pin-label" text-anchor="middle">C→Relay</text>
+<rect x="850" y="300" width="140" height="80" class="box-relay"/>
+<text x="920" y="345" class="comp-title" text-anchor="middle">座桶继电器\ASRD-12VDC</text>
+<text x="860" y="320" class="pin-label" text-anchor="middle">COIL+</text>
+<text x="860" y="365" class="pin-label" text-anchor="middle">COIL-</text>
+<text x="980" y="320" class="pin-label" text-anchor="middle">COM</text>
+<text x="980" y="365" class="pin-label" text-anchor="middle">NO→Pulse</text>
+<rect x="700" y="300" width="120" height="80" class="box"/>
+<text x="760" y="345" class="comp-title" text-anchor="middle">PC817\A光耦隔离</text>
+<text x="710" y="320" class="pin-label" text-anchor="middle">A(GPIO5)</text>
+<rect x="350" y="800" width="200" height="100" class="box"/>
+<text x="450" y="855" class="comp-title" text-anchor="middle">MAX98357A\AI2S DAC + 功放</text>
+<text x="360" y="825" class="pin-label" text-anchor="middle">VDD</text>
+<text x="360" y="875" class="pin-label" text-anchor="middle">BCLK/WS/DIN</text>
+<text x="540" y="855" class="pin-label" text-anchor="middle">OUT+/-→喇叭</text>
+<rect x="350" y="950" width="200" height="60" class="box"/>
+<text x="450" y="985" class="comp-title" text-anchor="middle">4Ω 3W 喇叭</text>
+<rect x="600" y="800" width="150" height="60" class="box"/>
+<text x="675" y="835" class="comp-title" text-anchor="middle">震动传感器\A（接原车报警信号）</text>
+<rect x="600" y="950" width="150" height="60" class="box"/>
+<text x="675" y="985" class="comp-title" text-anchor="middle">SIM7600 4G/GPS\A（预留UART2）</text>
+<line x1="170" y1="130" x2="340" y2="130" class="wire-pwr"/>
+<text x="340" y="125" class="net-label" text-anchor="middle">48V</text>
+<line x1="170" y1="385" x2="340" y2="385" class="wire-pwr"/>
+<text x="340" y="385" class="net-label" text-anchor="middle">12V</text>
+<line x1="170" y1="495" x2="340" y2="495" class="wire-pwr"/>
+<text x="480" y="495" class="net-label" text-anchor="middle">5V</text>
+<line x1="170" y1="600" x2="340" y2="600" class="wire-pwr"/>
+<text x="480" y="605" class="net-label" text-anchor="middle">3.3V</text>
+<line x1="170" y1="750" x2="1000" y2="750" class="wire-gnd"/>
+<text x="800" y="745" class="net-label" text-anchor="middle">GND</text>
+<line x1="150" y1="130" x2="170" y2="130" class="wire-pwr"/>
+<line x1="170" y1="215" x2="170" y2="130" class="wire-pwr"/>
+<line x1="170" y1="290" x2="170" y2="215" class="wire-pwr"/>
+<line x1="170" y1="385" x2="170" y2="290" class="wire-pwr"/>
+<line x1="170" y1="385" x2="30" y2="495" class="wire-pwr"/>
+<line x1="170" y1="495" x2="30" y2="600" class="wire-pwr"/>
+<line x1="170" y1="605" x2="350" y2="285" class="wire-pwr"/>
+<line x1="350" y1="360" x2="700" y2="170" class="wire-sig"/>
+<line x1="820" y1="195" x2="850" y2="170" class="wire-sig"/>
+<line x1="350" y1="390" x2="700" y2="320" class="wire-sig"/>
+<line x1="550" y1="570" x2="350" y2="875" class="wire-sig"/>
+<line x1="550" y1="855" x2="450" y2="980" class="wire-sig"/>
+<line x1="600" y1="835" x2="350" y2="450" class="wire-sig"/>
+<text x="30" y="1100" class="comp-title" text-anchor="start">连接说明：</text>
+<text x="30" y="1125" class="label" text-anchor="start">1. 电源：48V电动车电池 → XT60 → 30A保险丝 → TVS浪涌保护 → MP2307(48V→12V) → LM2596(12V→5V) → AMS1117(5V→3.3V)</text>
+<text x="30" y="1150" class="label" text-anchor="start">2. 门锁控制：ESP32 GPIO4 → PC817光耦 → 12V继电器 → 原车电门锁信号线（并联）</text>
+<text x="30" y="1175" class="label" text-anchor="start">3. 座桶控制：ESP32 GPIO5 → PC817光耦 → 12V继电器（脉冲触发100ms） → 座桶锁电机</text>
+<text x="30" y="1200" class="label" text-anchor="start">4. 震动报警：原车报警器信号 → GPIO12（下降沿中断） → 触发MAX98357A播放音效</text>
+<text x="30" y="1225" class="label" text-anchor="start">5. 蓝牙：ESP32 BLE，UUID: 12345678-1234-1234-1234-123456789abc</text>
+<text x="30" y="1250" class="label" text-anchor="start">6. 4G/GPS：预留UART2接口（GPIO41/RX2, GPIO42/TX2），可接SIM7600模块</text>
+<text x="30" y="1275" class="label" text-anchor="start">7. 所有12V/48V信号均通过PC817光耦隔离，保护ESP32</text>
+<text x="30" y="1300" class="label" text-anchor="start"></text>
+<text x="30" y="1325" class="label" text-anchor="start">嘉立创下单：</text>
+<text x="30" y="1350" class="label" text-anchor="start">- 将BOM嘉立创.csv导入嘉立创EDA，自动匹配元件</text>
+<text x="30" y="1375" class="label" text-anchor="start">- PCB尺寸建议：80mm x 60mm，双面板，1.6mm厚度</text>
+<text x="30" y="1400" class="label" text-anchor="start">- SMT贴片：选择BOM中所有贴片元件，省去手工焊接</text>
+</svg>

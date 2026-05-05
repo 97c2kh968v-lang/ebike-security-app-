@@ -1,0 +1,42 @@
+name: ebike_security
+description: 深远GT1电动车防盗控制器APP
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  
+  # 状态管理
+  flutter_riverpod: ^2.4.9
+  
+  # 蓝牙通信
+  flutter_blue_plus: ^1.32.0
+  
+  # 本地存储
+  shared_preferences: ^2.2.2
+  
+  # 权限管理
+  permission_handler: ^11.0.1
+  
+  # 文件选择（上传音效用）
+  file_picker: ^6.1.1
+  
+  # 路径处理
+  path_provider: ^2.1.1
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/sounds/
