@@ -1,0 +1,261 @@
+{
+  "editorVersion": "1.0.0",
+  "schLib": false,
+  "schematichash": "9888B78F-E77A-4D62-8346-7D3A2B94DFA1",
+  "annotation": [],
+  "devices": [
+    {
+      "id": "332AB008-5F85-43BA-BD1D-B91AA944D6ED",
+      "name": "XT60",
+      "lib": "Connectors",
+      "x": 10,
+      "y": 10,
+      "value": "XT60 48V Input"
+    },
+    {
+      "id": "CC0F24B4-2FF0-479B-92F5-D190C0AF6555",
+      "name": "FUSE",
+      "lib": "Devices",
+      "x": 30,
+      "y": 10,
+      "value": "30A Fuse"
+    },
+    {
+      "id": "2D064E30-5185-4F90-80CA-FE32E0059DA6",
+      "name": "TVS",
+      "lib": "Diodes",
+      "x": 50,
+      "y": 10,
+      "value": "SMBJ58A"
+    },
+    {
+      "id": "E42823BD-6962-425B-B49E-FBC6E659E5FC",
+      "name": "MP2307",
+      "lib": "Regulators",
+      "x": 10,
+      "y": 50,
+      "value": "48V->12V 3A"
+    },
+    {
+      "id": "E7077754-F743-442C-AA9C-5BF18221E52A",
+      "name": "LM2596",
+      "lib": "Regulators",
+      "x": 10,
+      "y": 90,
+      "value": "12V->5V 2A"
+    },
+    {
+      "id": "E33C49E5-FA9C-420F-B68E-3B512F034693",
+      "name": "AMS1117",
+      "lib": "Regulators",
+      "x": 10,
+      "y": 130,
+      "value": "5V->3.3V"
+    },
+    {
+      "id": "EBEE7BD7-53DB-4ECA-A704-7850C95CDACE",
+      "name": "ESP32-WROVER-E",
+      "lib": "MCU",
+      "x": 150,
+      "y": 80,
+      "value": "ESP32-WROVER-E"
+    },
+    {
+      "id": "BD40E891-3DDE-4819-9478-3BD9ABA32C4F",
+      "name": "RELAY1",
+      "lib": "Relays",
+      "x": 300,
+      "y": 30,
+      "value": "SRD-12VDC (电门锁)"
+    },
+    {
+      "id": "0A2B2817-D70E-4B5E-BA7B-D79242E5538C",
+      "name": "RELAY2",
+      "lib": "Relays",
+      "x": 300,
+      "y": 80,
+      "value": "SRD-12VDC (座桶锁)"
+    },
+    {
+      "id": "02C479B8-6765-4349-9698-E5E6B1AF62BC",
+      "name": "PC817_1",
+      "lib": "Optocouplers",
+      "x": 250,
+      "y": 30,
+      "value": "PC817 (门锁驱动)"
+    },
+    {
+      "id": "83BC975A-DAF8-4A76-931F-B012C089CF20",
+      "name": "PC817_2",
+      "lib": "Optocouplers",
+      "x": 250,
+      "y": 80,
+      "value": "PC817 (座桶驱动)"
+    },
+    {
+      "id": "E14D5109-6CEC-4E3E-BCE4-B254F4D28547",
+      "name": "MAX98357A",
+      "lib": "Audio",
+      "x": 150,
+      "y": 180,
+      "value": "MAX98357A I2S DAC"
+    },
+    {
+      "id": "F80AE3A6-85AC-4F3B-82CF-089F617D88A3",
+      "name": "SPEAKER",
+      "lib": "Audio",
+      "x": 300,
+      "y": 180,
+      "value": "4Ω 3W Speaker"
+    },
+    {
+      "id": "16C0793B-4F1F-44B3-BB5D-A0DF3705E863",
+      "name": "VIBE_SENSOR",
+      "lib": "Sensors",
+      "x": 150,
+      "y": 130,
+      "value": "震动报警输入"
+    },
+    {
+      "id": "8310113C-9719-40E6-9994-502915BDD679",
+      "name": "SIM7600",
+      "lib": "Modules",
+      "x": 150,
+      "y": 230,
+      "value": "SIM7600CE (预留)"
+    },
+    {
+      "id": "4AD6EAFD-D9AB-40EF-91ED-628A448BA402",
+      "name": "R1",
+      "lib": "Resistors",
+      "x": 200,
+      "y": 30,
+      "value": "10k"
+    },
+    {
+      "id": "BE5D6E44-5E3F-4E34-B622-12292160C1D6",
+      "name": "R2",
+      "lib": "Resistors",
+      "x": 200,
+      "y": 80,
+      "value": "10k"
+    },
+    {
+      "id": "66ACEECE-1240-468C-9FBB-B9D88FB3FF98",
+      "name": "C1",
+      "lib": "Capacitors",
+      "x": 50,
+      "y": 50,
+      "value": "100uF"
+    },
+    {
+      "id": "182BE6E1-7E05-49C8-A8C5-28615710F0CD",
+      "name": "C2",
+      "lib": "Capacitors",
+      "x": 50,
+      "y": 90,
+      "value": "10uF"
+    },
+    {
+      "id": "C76BF53B-B0E6-450C-BD9E-3A6A9A0A8CFC",
+      "name": "LED1",
+      "lib": "LEDs",
+      "x": 200,
+      "y": 130,
+      "value": "Status LED"
+    }
+  ],
+  "wires": [
+    {
+      "id": "905A63D2-3C1D-4500-A5E8-F84E04875A66",
+      "from": "332AB008-5F85-43BA-BD1D-B91AA944D6ED",
+      "to": "2D064E30-5185-4F90-80CA-FE32E0059DA6",
+      "net": "48V+"
+    },
+    {
+      "id": "D203A58A-EDAD-4087-8CF8-C905F2F98974",
+      "from": "E42823BD-6962-425B-B49E-FBC6E659E5FC",
+      "to": "E7077754-F743-442C-AA9C-5BF18221E52A",
+      "net": "12V"
+    },
+    {
+      "id": "0598FF69-F9F5-4B9C-A6AF-46B1B24E746A",
+      "from": "E7077754-F743-442C-AA9C-5BF18221E52A",
+      "to": "E33C49E5-FA9C-420F-B68E-3B512F034693",
+      "net": "5V"
+    },
+    {
+      "id": "C570F7DF-375B-4D52-BE44-47D654CDC519",
+      "from": "E33C49E5-FA9C-420F-B68E-3B512F034693",
+      "to": "EBEE7BD7-53DB-4ECA-A704-7850C95CDACE",
+      "net": "3.3V"
+    },
+    {
+      "id": "DF6FCEE7-9566-48B6-8C47-D3B98050004F",
+      "from": "EBEE7BD7-53DB-4ECA-A704-7850C95CDACE",
+      "to": "BD40E891-3DDE-4819-9478-3BD9ABA32C4F",
+      "net": "GPIO4"
+    },
+    {
+      "id": "1624D155-44F5-4EA1-8B0F-8E11BD4D9395",
+      "from": "EBEE7BD7-53DB-4ECA-A704-7850C95CDACE",
+      "to": "0A2B2817-D70E-4B5E-BA7B-D79242E5538C",
+      "net": "GPIO5"
+    },
+    {
+      "id": "8A1074AF-40D4-4776-8508-7FB4139EA9A6",
+      "from": "BD40E891-3DDE-4819-9478-3BD9ABA32C4F",
+      "to": "02C479B8-6765-4349-9698-E5E6B1AF62BC",
+      "net": "RELAY1_COIL"
+    },
+    {
+      "id": "E0A9B1B2-2AE8-441D-8D8D-2C34D146CF15",
+      "from": "0A2B2817-D70E-4B5E-BA7B-D79242E5538C",
+      "to": "83BC975A-DAF8-4A76-931F-B012C089CF20",
+      "net": "RELAY2_COIL"
+    },
+    {
+      "id": "BF75283A-A90E-441E-AED9-983AB81DC422",
+      "from": "EBEE7BD7-53DB-4ECA-A704-7850C95CDACE",
+      "to": "E14D5109-6CEC-4E3E-BCE4-B254F4D28547",
+      "net": "I2S"
+    },
+    {
+      "id": "4A6A5F94-5DE8-4259-B203-5ADF4AE2760C",
+      "from": "E14D5109-6CEC-4E3E-BCE4-B254F4D28547",
+      "to": "F80AE3A6-85AC-4F3B-82CF-089F617D88A3",
+      "net": "AUDIO_OUT"
+    },
+    {
+      "id": "357FED97-DA44-4203-8BAC-7C53DF7D6653",
+      "from": "16C0793B-4F1F-44B3-BB5D-A0DF3705E863",
+      "to": "EBEE7BD7-53DB-4ECA-A704-7850C95CDACE",
+      "net": "VIBE_INT"
+    },
+    {
+      "id": "3CFD0B24-A971-4FCD-8CF1-AD1C307310B2",
+      "from": "EBEE7BD7-53DB-4ECA-A704-7850C95CDACE",
+      "to": "8310113C-9719-40E6-9994-502915BDD679",
+      "net": "UART2"
+    }
+  ],
+  "nets": [],
+  "ports": [],
+  "rects": [],
+  "circles": [],
+  "arcs": [],
+  "polygons": [],
+  "texts": [],
+  "images": [],
+  "dimensions": [],
+  "sheets": [],
+  "titleBlock": {
+    "title": "深远GT1电动车防盗控制器",
+    "company": "DIY",
+    "rev": "v1.0",
+    "date": "2026-05-05",
+    "comment1": "ESP32-WROVER-E Main Controller",
+    "comment2": "Supports BLE Lock + Vibration Alarm + Seat Release",
+    "comment3": "Designed by 小码"
+  }
+}

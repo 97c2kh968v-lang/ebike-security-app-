@@ -1,0 +1,456 @@
+{
+  "formatVersion": "1.0",
+  "projecName": "深远GT1防盗控制器",
+  "components": [
+    {
+      "id": "5a9a82ec-d089-4062-9a28-1661440ba487",
+      "ref": "U1",
+      "value": "ESP32-WROVER-E",
+      "footprint": "Module:ESP32-WROOM-32",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 100,
+      "rotation": 0
+    },
+    {
+      "id": "78cbd6ad-bded-46c0-b5c0-f93bceacb04f",
+      "ref": "U2",
+      "value": "MP2307",
+      "footprint": "Converter_DCDC:Converter_DCDC_Mornsun_MSD",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 100,
+      "rotation": 0
+    },
+    {
+      "id": "7340cdbb-5622-4008-9314-6d6b71b41c9b",
+      "ref": "U3",
+      "value": "LM2596S-5.0",
+      "footprint": "Converter_DCDC:Converter_DCDC_LM2596",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 100,
+      "rotation": 0
+    },
+    {
+      "id": "a7999ff1-a3a6-489a-a7d6-eecb058d198d",
+      "ref": "U4",
+      "value": "AMS1117-3.3",
+      "footprint": "Package_TO_SOT_SMD:SOT-223",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 100,
+      "rotation": 0
+    },
+    {
+      "id": "cd28009a-8b6b-4594-a38c-6e2d852c72e0",
+      "ref": "K1",
+      "value": "SRD-12VDC-SL-C",
+      "footprint": "Relay:Relay_SRD",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 100,
+      "rotation": 0
+    },
+    {
+      "id": "4cecbb51-3b07-4f50-9508-7a295151356f",
+      "ref": "K2",
+      "value": "SRD-12VDC-SL-C",
+      "footprint": "Relay:Relay_SRD",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 200,
+      "rotation": 0
+    },
+    {
+      "id": "fe2aec35-9fb1-4c11-bb88-3402dea1a7db",
+      "ref": "U5",
+      "value": "PC817C",
+      "footprint": "OptoDevice:PC817",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 200,
+      "rotation": 0
+    },
+    {
+      "id": "e13f8327-d337-40b4-9fe6-24b28a2c73f9",
+      "ref": "U6",
+      "value": "PC817C",
+      "footprint": "OptoDevice:PC817",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 200,
+      "rotation": 0
+    },
+    {
+      "id": "5b0f36c6-2ead-4a98-a7d0-d0ec8d7427c2",
+      "ref": "U7",
+      "value": "PC817C",
+      "footprint": "OptoDevice:PC817",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 200,
+      "rotation": 0
+    },
+    {
+      "id": "c7dfd652-695f-4024-9106-afacdea67346",
+      "ref": "U8",
+      "value": "PC817C",
+      "footprint": "OptoDevice:PC817",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 200,
+      "rotation": 0
+    },
+    {
+      "id": "67f840e4-ebcc-4ef8-beaa-acf9fbbe5fe8",
+      "ref": "U9",
+      "value": "MAX98357AETE+",
+      "footprint": "Package_DFN_QFN:QFN-16_3x3mm_P0.5mm",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 300,
+      "rotation": 0
+    },
+    {
+      "id": "69d7b57d-a111-46e7-9ab2-7b26601596a8",
+      "ref": "U10",
+      "value": "74HC14D",
+      "footprint": "IC:SOP-14",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 300,
+      "rotation": 0
+    },
+    {
+      "id": "80f7cb83-69cc-4bdc-a3e2-e0ec4a8364e0",
+      "ref": "D1",
+      "value": "SMBJ58A",
+      "footprint": "Diode_SMD:D_SMB",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 300,
+      "rotation": 0
+    },
+    {
+      "id": "fe4fcc24-8136-4aea-8d00-99e724fcfe1c",
+      "ref": "D2",
+      "value": "SS54",
+      "footprint": "Diode_SMD:D_SMA",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 300,
+      "rotation": 0
+    },
+    {
+      "id": "739e1c2a-0ee2-47e7-96ed-14fead037cd0",
+      "ref": "D3",
+      "value": "1N4007",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 300,
+      "rotation": 0
+    },
+    {
+      "id": "256702ab-b70e-4cb9-84ae-1bad03be83f7",
+      "ref": "D4",
+      "value": "1N4007",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 400,
+      "rotation": 0
+    },
+    {
+      "id": "76629428-ce58-4b67-8a0d-679697cd9142",
+      "ref": "D5",
+      "value": "LED-3mm",
+      "footprint": "LED_THT:LED_3mm",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 400,
+      "rotation": 0
+    },
+    {
+      "id": "85e4fcd1-ee87-4b99-af8a-d58f3babcaed",
+      "ref": "D6",
+      "value": "LED-3mm",
+      "footprint": "LED_THT:LED_3mm",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 400,
+      "rotation": 0
+    },
+    {
+      "id": "7b2abe32-08ba-4692-b245-4bed0160664c",
+      "ref": "J1",
+      "value": "XT60",
+      "footprint": "Connector:XT60",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 400,
+      "rotation": 0
+    },
+    {
+      "id": "850b6866-df27-45d8-99e3-0447b6eb2932",
+      "ref": "J2",
+      "value": "TerminalBlock_2P_5.08mm",
+      "footprint": "Connector:TerminalBlock_2P",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 400,
+      "rotation": 0
+    },
+    {
+      "id": "a2159669-a366-4fbb-811a-abf1e5f08b9e",
+      "ref": "J3",
+      "value": "TerminalBlock_2P_5.08mm",
+      "footprint": "Connector:TerminalBlock_2P",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 500,
+      "rotation": 0
+    },
+    {
+      "id": "783eaad0-2f3e-4570-b36a-104a22ea7163",
+      "ref": "J4",
+      "value": "TerminalBlock_3P_3.5mm",
+      "footprint": "Connector:TerminalBlock_3P",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 500,
+      "rotation": 0
+    },
+    {
+      "id": "61a5a07b-af1c-467d-a0ac-01d75b69ea92",
+      "ref": "J5",
+      "value": "TerminalBlock_2P_3.5mm",
+      "footprint": "Connector:TerminalBlock_2P",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 500,
+      "rotation": 0
+    },
+    {
+      "id": "2f002b56-83f9-4221-9aff-fdd14f28dd32",
+      "ref": "J6",
+      "value": "PinHeader_6x2.54mm",
+      "footprint": "Connector:PinHeader_6x1",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 500,
+      "rotation": 0
+    },
+    {
+      "id": "a948fe47-f47c-40dd-9e87-a8072f4af489",
+      "ref": "J7",
+      "value": "PinHeader_2x2.54mm",
+      "footprint": "Connector:PinHeader_2x1",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 500,
+      "rotation": 0
+    },
+    {
+      "id": "5bbaa0ed-825a-41e7-83de-15e2be13dec7",
+      "ref": "SW1",
+      "value": "Tactile_Switch_6x6mm",
+      "footprint": "Button:SW_Push_6mm",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 600,
+      "rotation": 0
+    },
+    {
+      "id": "52bdf55f-27b6-426a-93f0-b8240eac9f5e",
+      "ref": "R1",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 600,
+      "rotation": 0
+    },
+    {
+      "id": "4faf827f-fb8f-4c3f-909c-b96395cc4747",
+      "ref": "R2",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 600,
+      "rotation": 0
+    },
+    {
+      "id": "bc8883c1-8818-4388-90b6-a0fdbd6b84a4",
+      "ref": "R3",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 600,
+      "rotation": 0
+    },
+    {
+      "id": "bcd3cbe7-37b2-41bd-8a5e-122076bc5000",
+      "ref": "R4",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 600,
+      "rotation": 0
+    },
+    {
+      "id": "468e5e61-0727-4c18-a923-6cfa7015afd7",
+      "ref": "R5",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 700,
+      "rotation": 0
+    },
+    {
+      "id": "61d96d66-a7b5-4c54-a2ab-9e08fba98e17",
+      "ref": "R6",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 700,
+      "rotation": 0
+    },
+    {
+      "id": "e9a6d4a0-7872-41a4-8e08-21c895358150",
+      "ref": "R7",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 700,
+      "rotation": 0
+    },
+    {
+      "id": "d5c0b63e-be8b-4b39-801e-6b6358de2649",
+      "ref": "R8",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 700,
+      "rotation": 0
+    },
+    {
+      "id": "8d5094bb-bba5-4504-9f2d-9565af5fd3d7",
+      "ref": "R9",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 700,
+      "rotation": 0
+    },
+    {
+      "id": "4ab7c37e-2911-4421-8596-f10de8707051",
+      "ref": "R10",
+      "value": "R_Small_US",
+      "footprint": "Resistor_SMD:R_0603",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 800,
+      "rotation": 0
+    },
+    {
+      "id": "7677ec1d-7c17-4391-9033-28ef1435435f",
+      "ref": "C1",
+      "value": "C_Small_US",
+      "footprint": "Capacitor_SMD:C_0603",
+      "lscNumber": "4",
+      "x": 250,
+      "y": 800,
+      "rotation": 0
+    },
+    {
+      "id": "bc2e6d74-b5c0-44f7-a03c-63dd59ef30c4",
+      "ref": "C2",
+      "value": "C_Small_US",
+      "footprint": "Capacitor_SMD:C_0603",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 800,
+      "rotation": 0
+    },
+    {
+      "id": "27cc7122-d4aa-4707-95e6-55412bdbfdd2",
+      "ref": "C3",
+      "value": "C_Elec_6.3x5.4",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.4",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 800,
+      "rotation": 0
+    },
+    {
+      "id": "e6ba027a-b14b-4367-a3c2-d460d0e877df",
+      "ref": "C4",
+      "value": "C_Elec_6.3x5.4",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.4",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 800,
+      "rotation": 0
+    },
+    {
+      "id": "613a31df-6031-4627-af3f-be7333b5663a",
+      "ref": "C5",
+      "value": "C_Elec_6.3x5.4",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.4",
+      "lscNumber": "1",
+      "x": 100,
+      "y": 900,
+      "rotation": 0
+    },
+    {
+      "id": "7ff96a54-ad41-4109-95a3-32ac12758c18",
+      "ref": "L1",
+      "value": "Inductor_Small",
+      "footprint": "Inductor_SMD:Inductor_7x7mm",
+      "lscNumber": "1",
+      "x": 250,
+      "y": 900,
+      "rotation": 0
+    },
+    {
+      "id": "9b014bda-17cf-4f99-b0b0-db383dd0023a",
+      "ref": "L2",
+      "value": "Inductor_Small",
+      "footprint": "Inductor_SMD:Inductor_7x7mm",
+      "lscNumber": "1",
+      "x": 400,
+      "y": 900,
+      "rotation": 0
+    },
+    {
+      "id": "a02013a8-087d-46d6-b9b2-03e6e999fa1f",
+      "ref": "F1",
+      "value": "Fuse_30A",
+      "footprint": "Fuse:Hole_5.1mm",
+      "lscNumber": "1",
+      "x": 550,
+      "y": 900,
+      "rotation": 0
+    },
+    {
+      "id": "2852650d-b593-4407-b9b2-968c014e9ef5",
+      "ref": "SP1",
+      "value": "Speaker_4R_3W",
+      "footprint": "Audio:Speaker_40mm",
+      "lscNumber": "1",
+      "x": 700,
+      "y": 900,
+      "rotation": 0
+    }
+  ]
+}

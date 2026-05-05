@@ -1,0 +1,157 @@
+{
+  "version": "1.0",
+  "editor": "lceda",
+  "proejctId": "ad5c13ff-918c-4454-a805-b605569d34ac",
+  "schematichash": "f680f970-554b-4741-8749-496699c9b0fd",
+  "titleBlock": {
+    "title": "深远GT1电动车防盗控制器",
+    "company": "DIY",
+    "rev": "v1.0",
+    "date": "2026-05-05",
+    "comment1": "ESP32-WROVER-E主控",
+    "comment2": "蓝牙门锁+震动报警+座桶控制",
+    "comment3": "Designed by 小码 for 大哥良"
+  },
+  "devices": [
+    {
+      "id": "5225b987-ef1c-42b6-9ce3-02761c4418fb",
+      "libId": "lceda.lib@CONN-2P-XT60",
+      "x": 100,
+      "y": 100,
+      "name": "XT60",
+      "value": "XT60 48V",
+      "rotation": 0
+    },
+    {
+      "id": "dcbab343-46fd-4406-bda7-d1375579a9d4",
+      "libId": "lceda.lib@FUSE-30A",
+      "x": 100,
+      "y": 200,
+      "name": "F1",
+      "value": "30A保险丝",
+      "rotation": 0
+    },
+    {
+      "id": "ee2a8835-2693-42ed-9cb0-ebd3ee1ae5c5",
+      "libId": "lceda.lib@DIODE-TVS-SMBJ58A",
+      "x": 100,
+      "y": 300,
+      "name": "D1",
+      "value": "SMBJ58A",
+      "rotation": 0
+    },
+    {
+      "id": "acc043c6-3f95-4b4e-8190-5dd37468a932",
+      "libId": "lceda.lib@DC-DC-MP2307",
+      "x": 100,
+      "y": 450,
+      "name": "U1",
+      "value": "MP2307 48V->12V",
+      "rotation": 0
+    },
+    {
+      "id": "c3612166-2717-4bfb-bc08-de25d2ff5862",
+      "libId": "lceda.lib@DC-DC-LM2596",
+      "x": 100,
+      "y": 580,
+      "name": "U2",
+      "value": "LM2596 12V->5V",
+      "rotation": 0
+    },
+    {
+      "id": "6a75fd27-6fd7-4039-b84e-b5f321fae22d",
+      "libId": "lceda.lib@LDO-AMS1117-3.3",
+      "x": 100,
+      "y": 710,
+      "name": "U3",
+      "value": "AMS1117-3.3",
+      "rotation": 0
+    },
+    {
+      "id": "d617c655-c0fc-41a9-b63e-596f35a4b0ef",
+      "libId": "lceda.lib@MCU-ESP32-WROVER-E",
+      "x": 450,
+      "y": 400,
+      "name": "U7",
+      "value": "ESP32-WROVER-E",
+      "rotation": 0,
+      "w": 400,
+      "h": 500
+    },
+    {
+      "id": "883c2341-77cb-409a-b28f-991f4f066283",
+      "libId": "lceda.lib@RELAY-SRD-12VDC",
+      "x": 900,
+      "y": 200,
+      "name": "K1",
+      "value": "门锁继电器",
+      "rotation": 0
+    },
+    {
+      "id": "9f334d94-c3ca-48fb-9236-190dcfa34b77",
+      "libId": "lceda.lib@OPTOCOUPLER-PC817",
+      "x": 700,
+      "y": 200,
+      "name": "U8",
+      "value": "PC817",
+      "rotation": 0
+    },
+    {
+      "id": "b19db36c-76f4-4b9f-b8ae-48b0349153da",
+      "libId": "lceda.lib@RELAY-SRD-12VDC",
+      "x": 900,
+      "y": 400,
+      "name": "K2",
+      "value": "座桶继电器",
+      "rotation": 0
+    },
+    {
+      "id": "d954f2ea-356d-45fa-9fc7-a2023f2b9774",
+      "libId": "lceda.lib@OPTOCOUPLER-PC817",
+      "x": 700,
+      "y": 400,
+      "name": "U9",
+      "value": "PC817",
+      "rotation": 0
+    },
+    {
+      "id": "30e12b7c-871d-4f18-b224-708218ba3654",
+      "libId": "lceda.lib@AUDIO-MAX98357A",
+      "x": 450,
+      "y": 700,
+      "name": "U10",
+      "value": "MAX98357A",
+      "rotation": 0
+    },
+    {
+      "id": "1dc6c959-ea01-4e34-aa2d-0d29541e09d9",
+      "libId": "lceda.lib@SPEAKER-4R-3W",
+      "x": 900,
+      "y": 700,
+      "name": "SP1",
+      "value": "4R 3W 喇叭",
+      "rotation": 0
+    },
+    {
+      "id": "1523d7b8-af07-4a96-a3bc-5e9fdd89348d",
+      "libId": "lceda.lib@MODULE-SIM7600",
+      "x": 450,
+      "y": 900,
+      "name": "U11",
+      "value": "SIM7600 4G/GPS",
+      "rotation": 0
+    },
+    {
+      "id": "vibe-sensor-id",
+      "libId": "lceda.lib@SENSOR-VIBRATION",
+      "x": 900,
+      "y": 550,
+      "name": "S1",
+      "value": "震动传感器",
+      "rotation": 0
+    }
+  ],
+  "wires": [],
+  "nets": [],
+  "texts": []
+}

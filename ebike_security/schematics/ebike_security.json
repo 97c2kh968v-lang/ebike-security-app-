@@ -1,0 +1,581 @@
+{
+  "doc_id": "undefined",
+  "doc_name": "深远GT1防盗控制器",
+  "doc_version": "v1.0",
+  "doc_design_time": "2026-05-05",
+  "project_id": "undefined",
+  "uuid": "ebike_security_v1",
+  "title": "深远GT1电动车防盗控制器",
+  "layout": "board",
+  "document_type": "sch",
+  "orientation": "",
+  "grid":
+  {
+    "grid_value": 100,
+    "grid_unit": "mil",
+    "is_show": true,
+    "snap": true
+  },
+  "preference":
+  {
+    "MONITOR_DOC": "0",
+    "TEXT_DOC_H": "120",
+    "TEXT_DOC_ANGLE": "0",
+    "TEXT_DOC_LINEWIDTH": "0",
+    "PIN_LENGHT": "100",
+    "PIN_NUM_H": "80",
+    "PIN_NUM_ANGLE": "0",
+    "PIN_NAME_H": "80",
+    "PIN_NAME_ANGLE": "0",
+    "PIN_NAME_OFFSET": "20",
+    "SHOW_PIVOT": "1",
+    "SHOW_SHAPE_CENTER": "1",
+    "SHOW_ICON": "1",
+    "SHOW_LABEL": "1",
+    "RULER_X": "0",
+    "RULER_Y": "0",
+    "SHOW_SIMMASK": "0",
+    "SHOW_PRINT_MARK": "0",
+    "PCB_VISIBLE": "1",
+    "SCH_VISIBLE": "1",
+    "CUS_LAYER_COLOR": "1",
+    "SVG_SCALE": "1",
+    "NET_COLOR": "#00b2ff",
+    "BUS_COLOR": "#1ab71a",
+    "SHOW_DOT": "1",
+    "SHOW_NET_NAME": "1",
+    "SHOW_PARA": "1",
+    "SHOW_RULER": "1",
+    "SHOW_GRID": "1",
+    "SHOW_PAGE_BOUND": "1",
+    "SHOW_ZOOM": "0.8",
+    "LIVESCROLL": "0",
+    "SHOW_COM": "0",
+    "SHOW_VALUE": "1",
+    "SHOW_REF": "1",
+    "SHOW_USER_TEXT": "1",
+    "SHOW_LIBRARY": "1",
+    "SHOW_TITLE": "1",
+    "SHOW_PAGE": "1"
+  },
+  "colors":
+  {
+    "grid_color": "#ffffff",
+    "background_color": "#ffffff",
+    "select_color": "#009fe6",
+    "cursor_color": "#000000",
+    "track_color": "#009fe6",
+    "copper_color": "#c44e21",
+    "pad_color": "#cccccc",
+    "silkscreen_color": "#ffffff",
+    "paste_color": "#999999",
+    "mask_color": "#3a3a3a",
+    "snip_color": "#ff00ff",
+    "pcb_background": "#ffffff",
+    "Hole_color": "#666666",
+    "DRC_Mark_color": "#ff0000",
+    "ERR_COLOR": "#ff0000",
+    "grid_color_light": "#eaeaea",
+    "layer_1": "#1500ff",
+    "layer_2": "#00ff15",
+    "layer_3": "#ff5e00",
+    "layer_4": "#ffee00",
+    "layer_5": "#00ccff",
+    "layer_6": "#9900ff",
+    "layer_7": "#ff00ff",
+    "layer_8": "#666666",
+    "layer_9": "#999999",
+    "layer_10": "#1500ff",
+    "layer_11": "#00ff15",
+    "layer_12": "#ff5e00",
+    "layer_13": "#ffee00",
+    "layer_14": "#00ccff",
+    "layer_15": "#9900ff",
+    "layer_16": "#ff00ff",
+    "layer_17": "#666666",
+    "layer_18": "#999999",
+    "layer_19": "#1500ff",
+    "layer_20": "#00ff15",
+    "layer_21": "#ff5e00",
+    "layer_22": "#ffee00",
+    "layer_23": "#00ccff",
+    "layer_24": "#9900ff",
+    "layer_25": "#ff00ff",
+    "layer_26": "#666666",
+    "layer_27": "#999999"
+  },
+  "layers":
+  {
+    "1":
+    {
+      "id": 1,
+      "name": "封面",
+      "stack": "0",
+      "type": "board",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "2":
+    {
+      "id": 2,
+      "name": "布线层顶层",
+      "stack": "0",
+      "type": "copper",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "3":
+    {
+      "id": 3,
+      "name": "布线层底层",
+      "stack": "0",
+      "type": "copper",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "4":
+    {
+      "id": 4,
+      "name": "丝印层顶层-器件面",
+      "stack": "0",
+      "type": "silkscreen",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "5":
+    {
+      "id": 5,
+      "name": "丝印层底层-焊接面",
+      "stack": "0",
+      "type": "silkscreen",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "6":
+    {
+      "id": 6,
+      "name": "焊锡层顶层",
+      "stack": "0",
+      "type": "paste",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "7":
+    {
+      "id": 7,
+      "name": "焊锡层底层",
+      "stack": "0",
+      "type": "paste",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "8":
+    {
+      "id": 8,
+      "name": "阻焊层顶层",
+      "stack": "0",
+      "type": "soldermask",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "9":
+    {
+      "id": 9,
+      "name": "阻焊层底层",
+      "stack": "0",
+      "type": "soldermask",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "10":
+    {
+      "id": 10,
+      "name": "施通层顶层",
+      "stack": "0",
+      "type": "sheet",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "11":
+    {
+      "id": 11,
+      "name": "钻孔层",
+      "stack": "0",
+      "type": "hole",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "12":
+    {
+      "id": 12,
+      "name": "无铜孔",
+      "stack": "0",
+      "type": "npth",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "13":
+    {
+      "id": 13,
+      "name": "多层顶层",
+      "stack": "0",
+      "type": "multi",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "14":
+    {
+      "id": 14,
+      "name": "多层底层",
+      "stack": "0",
+      "type": "multi",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "15":
+    {
+      "id": 15,
+      "name": "焊盘底层",
+      "stack": "0",
+      "type": "pad",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "16":
+    {
+      "id": 16,
+      "name": "走线布线层",
+      "stack": "0",
+      "type": "route",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "17":
+    {
+      "id": 17,
+      "name": "DRC错误",
+      "stack": "0",
+      "type": "route",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "18":
+    {
+      "id": 18,
+      "name": "切割层",
+      "stack": "0",
+      "type": "cut",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "19":
+    {
+      "id": 19,
+      "name": "装配层顶层",
+      "stack": "0",
+      "type": "asm",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "20":
+    {
+      "id": 20,
+      "name": "装配层底层",
+      "stack": "0",
+      "type": "asm",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "21":
+    {
+      "id": 21,
+      "name": "飞线",
+      "stack": "0",
+      "type": "flyline",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "22":
+    {
+      "id": 22,
+      "name": "3D外壳",
+      "stack": "0",
+      "type": "board",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "23":
+    {
+      "id": 23,
+      "name": "元件面内电层",
+      "stack": "0",
+      "type": "copper",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "24":
+    {
+      "id": 24,
+      "name": "焊接面内电层",
+      "stack": "0",
+      "type": "copper",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "25":
+    {
+      "id": 25,
+      "name": "内电层3",
+      "stack": "0",
+      "type": "copper",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "26":
+    {
+      "id": 26,
+      "name": "内电层4",
+      "stack": "0",
+      "type": "copper",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    },
+    "27":
+    {
+      "id": 27,
+      "name": "内电层5",
+      "stack": "0",
+      "type": "copper",
+      "visible": true,
+      "show": true,
+      "color": "",
+      "fill": false,
+      "translate": false,
+      "united": false,
+      "lock": false
+    }
+  },
+  "BOM":
+  {
+    "head":
+    {
+      "Comment": " Comment",
+      "Designator": "Designator",
+      "Footprint": "Footprint",
+      "LCSC": "LCSC"
+    },
+    "data": []
+  },
+  "components":
+  [],
+  "shape":
+  {
+    "lib_index": -1,
+    "shapes":
+    []
+  },
+  "package":
+  {
+    "lib_name": "",
+    "smd": "0",
+    "model": "",
+    "distor": "",
+    "height": "",
+    "shadow": "",
+    "text": "",
+    "outline": "",
+    "center": "",
+    "w": "",
+    "h": "",
+    "points":
+    []
+  },
+  "tracks":
+  [],
+  "track_length":
+  [],
+  "Fill":
+  [],
+  "czone":
+  [],
+  "library":
+  {
+    "normal":
+    [],
+    "power":
+    [],
+    "device":
+    []
+  },
+  "BGA_PAIR":
+  [],
+  "drc":
+  {
+    "unuse_via": "0",
+    "share_via": "0",
+    "min_via": "0",
+    "min_spacing": "6",
+    "min_width": "6",
+    "min_annular": "8",
+    "min_hole": "12",
+    "min_width_router": "6",
+    "max_width_router": "59",
+    "max_annular_router": "90",
+    "min_slder": "3",
+    "min_mask": "3",
+    "is_drc": "0",
+    "show_ruler": "0",
+    "is_eye": "0",
+    "diff_pair": "0",
+    "route_mode": "0",
+    "smart_route": "0",
+    "is_45": "0",
+    "is_autoroute": "0",
+    "is_postroute": "0",
+    "is_shape_route": "0"
+  },
+  "ordernumber": [],
+  "net":
+  {
+    "net1":
+    {
+      "name": "GND",
+      "node": []
+    },
+    "net48V":
+    {
+      "name": "+48V",
+      "node": []
+    }
+  }
+}
