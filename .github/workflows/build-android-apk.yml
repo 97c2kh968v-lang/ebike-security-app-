@@ -11,15 +11,48 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: subosito/flutter-action@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.0'
           channel: 'stable'
-      - run: cd app && flutter pub get
-      - run: cd app && flutter build apk --debug
-      - uses: actions/upload-artifact@v4
+
+      - name: Verify Flutter
+        run: flutter --version
+
+      - name: Create fresh Flutter project
+        run: |
+          flutter create --project-name ebike_security --org com.ebike /tmp/myapp
+
+      - name: Copy our source code into the fresh project
+        run: |
+          cp -r app/lib/* /tmp/myapp/lib/
+          cp app/pubspec.yaml /tmp/myapp/pubspec.yaml
+          if [ -d app/assets ]; then
+            cp -r app/assets /tmp/myapp/
+          fi
+          if [ -f app/ios/Runner/Info.plist ]; then
+            cp app/ios/Runner/Info.plist /tmp/myapp/ios/Runner/Info.plist
+          fi
+
+      - name: Get dependencies
+        run: |
+          cd /tmp/myapp
+          flutter pub get
+
+      - name: Build debug APK
+        run: |
+          cd /tmp/myapp
+          flutter build apk --debug
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
         with:
           name: ebike-security-app-debug.apk
-          path: app/build/app/outputs/flutter-apk/app-debug.apk
+          path: /tmp/myapp/build/app/outputs/flutter-apk/app-debug.apk
+          retention-days: 30
